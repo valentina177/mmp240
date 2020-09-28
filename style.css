@@ -28,8 +28,10 @@ a{ text-decoration: none;
 h3{text-decoration: underline;
 }
 
+
+
 ul{
 	text-align: left;
-
+	line-height:1.9em;
 	border: 2px solid white;
 }
