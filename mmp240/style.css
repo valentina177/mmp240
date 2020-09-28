@@ -1,0 +1,35 @@
+body{
+	background: rgb(238,174,202);
+background-image: radial-gradient(circle, #ebc0eb, #b98dbf, #885d95, #58316d, #290648);
+
+
+	color:white;
+	font-family: Times New Roman;
+	font-size: 20px;
+
+	text-align: center;
+
+}
+ p, a{
+	 font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+}
+a{ text-decoration: none;
+          font-family: 'Roboto', sans-serif;
+          font-size:26px;
+          padding-top: 30px;
+          padding-bottom:20px;
+
+
+	color: white;
+	transition: color 300ms  ease-in;
+}
+
+h3{text-decoration: underline;
+}
+
+ul{
+	text-align: left;
+
+	border: 2px solid white;
+}
