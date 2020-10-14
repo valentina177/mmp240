@@ -34,4 +34,10 @@ ul{
 	text-align: left;
 	line-height:1.9em;
 	border: 2px solid white;
+
+}
+
+li{
+	padding-top: 10px;
+	padding-bottom:10px;
 }
