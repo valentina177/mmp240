@@ -145,3 +145,10 @@ h5{
   top:-35px;
 
 }
+
+@media (max-width: 480px){
+  .episodes{
+    flex-direction: column;
+  }
+
+}
