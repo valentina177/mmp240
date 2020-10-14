@@ -16,7 +16,8 @@ padding: 2em;
 }
 
 p{
-  margin-bottom: 1em;
+  margin-bottom: 3em;
+   letter-spacing: 0.9px;
 
 }
 
@@ -142,5 +143,5 @@ h5{
   float: right;
   position: relative;
   top:-35px;
-  
+
 }
