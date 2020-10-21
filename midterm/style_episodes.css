@@ -11,8 +11,6 @@ body{
 
 header{
 background: url("images/kipo.jpg") no-repeat  center;
-padding: 2em;
-
 }
 
 p{
@@ -60,8 +58,7 @@ nav{
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,0.5214460784313726) 0%, rgba(255,255,255,0) 100%);
   padding: 12px;
-  position: relative;
-  bottom: 496px;
+
 
 }
 
@@ -147,8 +144,8 @@ h5{
 }
 
 @media (max-width: 480px){
-  .episodes{
-    flex-direction: column;
+  .episode_card{
+    width: 98%;
   }
 
 }
