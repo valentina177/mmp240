@@ -82,13 +82,24 @@ nav li{
  }
 
 
+ .col{
+  width: 48%;
+}
+ .col-left{
+   float:left;
+ }
+
+ .col-right{
+   float:right;
+ }
+
  footer{
    clear: both;
  }
 
  h2{
    font-size: 1.3em;
-   padding-top: 1.5em;
+    padding-top: 1.5em;
    text-transform: uppercase;
    font-weight: bold;
    margin-bottom: 0.5em;
@@ -96,8 +107,7 @@ nav li{
 }
 
 h3{
-font-size: 1.2em;
- margin-bottom: 2em;
+  font-weight: bold;
 }
 
 .tv-y7{
@@ -109,44 +119,4 @@ font-size: 1.2em;
 main{
   margin-bottom: 3em;
   overflow: auto;
-}
-
-/*episodes page*/
-.episodes{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-
-.episode_card{
-  width: 24%;
-  flex: 0 1 auto;
-
-}
-
-.responsive-img{
-  width: 100%;
-}
-
- h4{
-    font-weight: bold;
-    font-size: 1em;
-    margin-bottom: 1em;
- }
-
-h5{
-  font-size: 0.9em;
-  float: right;
-  position: relative;
-  top:-35px;
-
-}
-
-@media (max-width: 480px){
-  .episode_card{
-    width: 98%;
-  }
-
 }
