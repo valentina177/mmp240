@@ -11,6 +11,8 @@ body{
 
 header{
 background: url("images/kipo.jpg") no-repeat  center;
+position: relative;
+
 }
 
 p{
@@ -22,7 +24,8 @@ p{
 h1 img{
  max-width: 100%;
  position: relative;
- top: 55px;
+ top: -50px;
+
 
 }
 
@@ -42,9 +45,9 @@ header button{
   border-radius: 5px;
 	font-size: 20px;
 	margin:4px 0;
-  position: relative;
-  left: 1030px;
-  bottom: 20px;
+  position: absolute;
+  bottom: 5px;
+  margin-left:  5em;
   transition-duration: 0.5s;
 
 }
