@@ -15,6 +15,7 @@
   position: absolute;
   display: none;
 }
+
 .dropdown li{
   display: block;
   border: solid 1px #ccc;
@@ -23,5 +24,5 @@
 }
 
 .main-menu li:hover .dropdown{
-  
+  display: block;
 }
