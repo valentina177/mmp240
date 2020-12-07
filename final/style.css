@@ -3,6 +3,14 @@
   max-width: 1200px;
   padding: 1em;
 }
+p,h1,h2,h3,h4{
+  margin-bottom: 1em;
+}
+
+h1,h2,h3,h4{
+  font-weight:bold;
+}
+
 .site-header{
   display: flex;
   justify-content: space-between;
@@ -17,6 +25,90 @@
   border:none;
 }
 
+.search-programs{
+  min-height: 8em;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.search-programs li{
+  display: inline-block;
+  margin-right: 2em;
+
+}
+
+.dropdown{
+  background-color: #e3e3e3;
+  padding: 0;
+  position: absolute;
+  display: none;
+}
+
+.dropdown li{
+  display: block;
+  border: solid 1px #ccc;
+  margin-right: 0em;
+}
+
+.search-programs li:hover .dropdown{
+  display: block;
+}
+
+.search-programs li img{
+  float: right;
+  width: 15px;
+}
+
+.search-programs ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.search-programs a{
+  display: block;
+  padding: 1em;
+  background-color: #ccc;
+  border-bottom: solid 1px #666;
+  color:black;
+  text-decoration: none;
+}
+
+.search-programs li li a{
+  background-color: #999;
+  color: white;
+}
+
+.search-programs a:hover{
+  background-color: aqua;
+}
+
+.search-programs li ul{
+  display: none;
+}
+
+.search-programs li:hover ul{
+  display: block;
+}
+
+
+
+.hero-banner{
+  min-height: 12em;
+  background-color: teal;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.event-item img{
+  width: 100%;
+}
+
+
+
+
+
 @media (min-width:768px) {
   .show-menu{
     display: none;
@@ -28,5 +120,13 @@
     display: inline;
     margin-right: 2em;
   }
+
+  .layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+  
 
 }/*closing @media query*/
