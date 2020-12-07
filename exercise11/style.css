@@ -1,6 +1,6 @@
 #wrapper{
   max-width: 1200px;
-  marging:0 auto;
+  margin:0 auto;
 }
 
 .main-menu li{
@@ -19,8 +19,7 @@
 .dropdown li{
   display: block;
   border: solid 1px #ccc;
-  padding: 0.5em 2em;
-  margin-right: 0;
+  margin-right: 0em;
 }
 
 .main-menu li:hover .dropdown{

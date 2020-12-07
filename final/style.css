@@ -1,1 +1,32 @@
 /* CSS Styles */
+#wrapper{
+  max-width: 1200px;
+  padding: 1em;
+}
+.site-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu{
+  display: none;
+}
+
+.show-menu{
+  background-color: transparent;
+  border:none;
+}
+
+@media (min-width:768px) {
+  .show-menu{
+    display: none;
+  }
+  .menu{ display:flex;
+  }
+
+  .menu li{
+    display: inline;
+    margin-right: 2em;
+  }
+
+}/*closing @media query*/
