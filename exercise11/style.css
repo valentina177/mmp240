@@ -6,6 +6,7 @@
 .main-menu li{
   display: inline-block;
   margin-right: 2em;
+  width: 300px;
 
 }
 
