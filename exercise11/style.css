@@ -30,6 +30,12 @@
 nav li img{
   float: right;
   width: 15px;
+  transition: transform .3s ease-in;
+
+}
+
+nav li:hover img{
+  transform: rotate(180deg);
 }
 
 nav ul{
@@ -62,3 +68,21 @@ nav li ul{
 nav li:hover ul{
   display: block;
 }
+
+
+
+@media (min-width:768px) {
+
+  nav li{ display:inline-block;
+    min-width: 12em;
+  }
+
+  nav li li{
+    display: block;
+    margin-right: 2em;
+  }
+
+  nav li ul{
+    position: absolute;
+  }
+  }
