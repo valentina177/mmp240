@@ -1,108 +1,330 @@
 /* CSS Styles */
-#wrapper{
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2em;
+}
+
+#wrapper {
   max-width: 1200px;
+  margin: 0 auto;
   padding: 1em;
 }
-p,h1,h2,h3,h4{
+
+ p,h1, h4 {
   margin-bottom: 1em;
 }
 
-h1,h2,h3,h4{
-  font-weight:bold;
+p{
+  text-align: justify;
+  margin-right: 3em;
+
 }
 
-.site-header{
+ h2, h3, h4 {
+  font-weight: bold;
+}
+
+ h1 img{
+   max-width: 60%;
+
+
+ }
+
+h2{
+  color:#660708;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+h3{
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+
+}
+
+
+header, .search-programs, .hero-banner, .layout, footer {
+  margin-bottom: 2em;
+}
+
+.site-header {
   display: flex;
   justify-content: space-between;
 }
 
-.menu{
+nav {
+  text-align: center;
+  color:white;
+}
+
+.nav-menu {
   display: none;
+  position: absolute;
+  right: 1em;
+
 }
 
-.show-menu{
+.toggle-menu {
   background-color: transparent;
-  border:none;
+  border: none;
 }
 
-.search-programs{
+
+.search-programs {
   min-height: 8em;
   border: solid 1px #ccc;
   border-radius: 10px;
   padding: 1em;
   margin-bottom: 1em;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.search-programs li{
+.search-programs li {
   display: inline-block;
   margin-right: 2em;
-
+  width: 350px;
 }
 
-.dropdown{
-  background-color: #e3e3e3;
+.dropdown {
   padding: 0;
   position: absolute;
   display: none;
+  z-index: 100;
 }
 
-.dropdown li{
+.dropdown li {
   display: block;
-  border: solid 1px #ccc;
   margin-right: 0em;
 }
 
-.search-programs li:hover .dropdown{
+.search-programs li:hover .dropdown {
   display: block;
+
 }
 
-.search-programs li img{
+
+.search-programs li:hover img{
+  transform: rotate(180deg);
+
+}
+
+.search-programs li img {
   float: right;
   width: 15px;
+  transition: transform .3s ease-in;
 }
 
-.search-programs ul{
+.search-programs ul {
   padding: 0;
   list-style-type: none;
 }
 
-.search-programs a{
+.search-programs a {
+  border-radius: 40px;
   display: block;
   padding: 1em;
-  background-color: #ccc;
-  border-bottom: solid 1px #666;
-  color:black;
+  background-color: #660708;
+  border-bottom: solid 1px #b1a7a6;
+  color: white;
   text-decoration: none;
 }
 
-.search-programs li li a{
-  background-color: #999;
+.search-programs li li a {
+  background-color: #161a1d;
   color: white;
 }
 
-.search-programs a:hover{
-  background-color: aqua;
+.search-programs a:hover {
+  background-color: #a4161a;
 }
 
-.search-programs li ul{
+.search-programs li ul {
   display: none;
 }
 
-.search-programs li:hover ul{
+.search-programs li:hover ul {
   display: block;
 }
 
 
 
-.hero-banner{
+.hero-banner {
+  position: relative;
+  background-color: #660708;
   min-height: 12em;
-  background-color: teal;
-  padding: 1em;
+  margin-bottom: 1em;
+
+
+}
+
+
+
+ .hero-banner h3 a{
+   max-width: 99%;
+   position: absolute;
+   list-style-type: none;
+   text-decoration: none;
+   color: white;
+   font-size: 2.7em;
+   line-height: 100%;
+   text-transform: uppercase;
+   top:50px;
+   left:20px;
+
+
+ }
+
+
+
+ #image{
+    border-radius: 8px;
+
+
+ }
+
+.news-item h3{
+  margin-top: 2em;
+}
+
+.news-item a{
+  color:#660708;
+  list-style-type: none;
+  text-decoration: underline;
+  font-weight: bold;
+
+}
+
+.news-item a:hover{
+  color:#a4161a;
+}
+
+
+#search-go{
+  background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'roboto';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+
+
+
+.go-button{
+  background-color: #660708;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius:6px;
+   color: #fff;
+   font-family: 'roboto';
+   font-size: 20px;
+   text-decoration: none;
+   cursor: pointer;
+   border:none;
+
+}
+
+.go-button:hover{
+  background-color: #a4161a;
+}
+
+.apply-button{
+  background-color: #660708;
+  border:none;
+  border-radius: 40px;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ font-size: 16px;
+ position: absolute;
+ bottom: 20px;
+ left:20px;
+
+}
+
+.apply-button:hover{
+  background-color: #a4161a;
+}
+
+
+.event-item img {
+  width: 100%;
+  margin-bottom: 1em;
+
+}
+
+.event-item img:hover{
+  opacity: 0.5;
+
+}
+
+.event-item h3 a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+
+}
+
+
+.event-item p {
+  color: white;
+}
+.events{
+  background-color: #660708;
+  border-radius: 40px;
+  padding: 1.5em;
+}
+
+.events h2{
+  color:white;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
   margin-bottom: 1em;
 }
 
-.event-item img{
-  width: 100%;
+#menu {
+  display: none;
+  background-color: #161a1d;
+  border-radius: 40px;
+  padding: 1.5em;
+}
+
+.menubar {
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.menubar a {
+  font-weight: bold;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0;
+  border-bottom: solid 1px gray;
+}
+
+.menubar a:hover{
+  color:#a4161a;
+
+}
+
+
+
+
+footer{
+  clear: both;
 }
 
 
@@ -110,23 +332,60 @@ h1,h2,h3,h4{
 
 
 @media (min-width:768px) {
-  .show-menu{
+  .toggle-menu {
     display: none;
   }
-  .menu{ display:flex;
+
+  .nav-menu {
+    display: flex;
   }
 
-  .menu li{
+  .nav-menu li {
     display: inline;
     margin-right: 2em;
   }
 
-  .layout{
+  .layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 1em;
   }
 
-  
+  #menu {
+    display: flex;
+    position: static;
+    background-color: transparent;
+  }
+
+
+
+  .menubar li {
+    display: inline-block;
+  }
+
+  .menubar a {
+    border: none;
+    color: #660708;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 1em;
+  }
+
+
+
+  .search-programs li {
+    display: inline-block;
+    min-width: 12em;
+  }
+
+  .search-programs li li {
+    display: block;
+    margin-right: 2em;
+  }
+
+  .search-programs li ul {
+    position: absolute;
+  }
+
 
 }/*closing @media query*/
